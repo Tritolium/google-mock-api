@@ -13,7 +13,7 @@ var page_translate = undefined
 
 startService = async () => {
     browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         defaultViewport: null
     })
     console.log('Service running')
